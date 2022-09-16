@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <title>Diabo Predict</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    input[type=text],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .registerbtn {
+      background-color: #e48912;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+
+
+
+    input[type=submit]:hover {
+      background-color: #e48912;
+    }
+    
+    body {
+      background: #c0392b;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #73d7b1, #3eb8ce);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right,  #73d7b1, #3eb8ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    }
+    
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: #0D0D0D;
+      color: #f1f1f1;
+      width: 100%;
+      padding: 5px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">Diabetes Prediction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          <a class="nav-link" href="/Info">About</a>
+          <a class="nav-link" href="/team">Team</a>
+          <a class="nav-link" href="/contact">Contact</a>
+        </div>
+      </div>
+      <form class="d-flex">
+        <h4 style="color:white;">Welcome {{name}} !</h4>
+        &nbsp&nbsp
+        <a class="btn btn-success" href="/signout" role="button">Sign Out</a>
+      </form>
+    </div>
+  </nav>
+<br>
+<br>
+  <div class="container">
+    <br>
+    <h2 style="text-align: center; color: rgb(72 79 72); font-size: 3rem;">Result </h2>
+    {% if prediction == 1%}
+    <h2 style="color: rgb(111 56 56); text-align: center;">Chances of having Diabetes is more, please consult a Doctor.</h2>
+    <!-- <p style="text-align:center;"><img src="https://img.collegedekhocdn.com/media/img/careers/doctor-clinic.jpg"alt="HTML" width="350" height="250"></p> -->
+    <p class="box" style="text-align:center;"><img  style="margin-top: 14px; box-shadow: 10px 20px 30px rgb(9, 51, 55);" src="https://media.istockphoto.com/photos/online-medical-consultation-doctor-working-on-laptop-computer-in-picture-id1189309997?k=6&m=1189309997&s=170667a&w=0&h=dHTByM-sgvDbQCmqkEXVOtIySS7SG5BTh3LDyyHdUj0="alt="HTML" width="450" height="250"></p>
+    {% elif prediction == 0%}
+    <h2 style="color: rgb(57 108 57);text-align: center;">No Worries!!! You don't have Diabetes.</h2>
+    <!-- <p style="text-align: center;"></p><img src="https://www.becomingminimalist.com/wp-content/uploads/2019/09/how-to-be-happy.jpg" alt="HTML" width="350" height="250"></p> -->
+    <p class="box" style="text-align: center; "><img  id="move" style="margin-top: 14px; box-shadow: 10px 20px 30px rgb(9, 51, 55);" src="https://cdn.pixabay.com/photo/2015/12/18/16/34/relax-1098751_960_720.jpg" alt="HTML" width="550" height="250"></p>
+    {% endif %}
+    <br>
+    <br>
+  </div>
+
+
+  <div class="content">
+  
+    <p style="text-align: center;">Group B09 : Computer Science, G.H.Raisoni College of Engineering @Diabetes Prediction 2022</p>
+    
+  </div>
+
+
+
+</body>
+
+</html>

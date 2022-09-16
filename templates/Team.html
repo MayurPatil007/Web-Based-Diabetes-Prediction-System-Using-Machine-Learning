@@ -1,0 +1,232 @@
+<html>
+
+<head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<title>Diabetes Prediction</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<style>
+		/* CSS code for button */
+
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-size: 17px;
+		}
+
+
+		body {
+			background-image: linear-gradient(345deg, #6cec9b 0%, #62abd0 100%);
+
+		}
+		.content {
+			position: fixed;
+			bottom: 0;
+			background: #0D0D0D;
+			color: #f1f1f1;
+			width: 100%;
+			padding: 5px;
+		  }
+	</style>
+</head>
+
+<body>
+	<!-- Java Script -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+
+
+	<!-- Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/home">Diabo Predict</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="/home">Home</a>
+					<a class="nav-link" href="/Info">About</a>
+					<a class="nav-link" href="/team">Team</a>
+					<a class="nav-link" href="/contact">Contact</a>
+				</div>
+			</div>
+			<form class="d-flex">
+				<h4 style="color:white;">Welcome {{name}} !</h4>
+				&nbsp&nbsp
+				<a class="btn btn-success" href="/signout" role="button">Sign Out</a>
+			</form>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<div class="container">
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+
+					<div data-aos="flip-down" class="card bg-success text-white" style="width: 18rem;     background-image: linear-gradient(239deg, #70c6bc 0%, #88ee96 100%);">
+
+						<div class="card-body">
+							<h5 class="card-title">Prashant Singh</h5>
+							<p class="card-text">Department : Computer Science</p>
+							<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+							<p class="card-text">Contribution : Full Stack Development</p>
+							<a href="https://www.linkedin.com/in/prashants-singh" target="_blank"
+								class="btn btn-dark">LinkedIn</a>
+						</div>
+
+
+
+					</div>
+
+				</div>
+				<div class="col-sm">
+					<div data-aos="flip-down" class="card bg-success text-white" style="width: 18rem;     background-image: linear-gradient(239deg, #70c6bc 0%, #88ee96 100%);">
+
+					
+
+						<div class="card-body">
+							<h5 class="card-title">Premal Miglani</h5>
+							<p class="card-text">Department : Computer Science</p>
+							<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+							<p class="card-text">Contribution : Machine Learning Model Development</p>
+							<a href="https://in.linkedin.com/in/premal-miglani-9464811b0" target="_blank"
+								class="btn btn-dark">LinkedIn</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-sm">
+				<div data-aos="flip-down" class="card bg-success text-white" style="width: 18rem;     background-image: linear-gradient(239deg, #70c6bc 0%, #88ee96 100%);">
+
+					<div class="card-body">
+						<h5 class="card-title">Sandipan Debnath</h5>
+						<p class="card-text">Department : Computer Science</p>
+						<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+						<p class="card-text">Contribution : Data Pre Processing</p>
+						<a href="https://www.linkedin.com/in/sandipan-debnath-b1570616b/" target="_blank"
+							class="btn btn-dark">LinkedIn</a>
+					</div>
+
+
+
+				</div>
+
+			</div>
+			<div class="col-sm">
+				<div data-aos="flip-down" class="card bg-success text-white" style="width: 18rem;     background-image: linear-gradient(239deg, #70c6bc 0%, #88ee96 100%);">
+
+					<div class="card-body  ">
+						<h5 class="card-title">Rohit Kore</h5>
+						<p class="card-text">Department : Computer Science</p>
+						<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+						<p class="card-text">Contribution : Machine Learning Model Development</p>
+						<a href="https://www.linkedin.com/in/rohit-kore-50a833172/" target="_blank"
+							class="btn btn-dark">LinkedIn</a>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+		<br>
+		<div class="row">
+			<!-- <div class="col-sm">
+				<div data-aos="flip-down" class="card bg-success text-white" style="width: 18rem;">
+
+					<div class="card-body">
+						<h5 class="card-title">Sakshi Asati</h5>
+						<p class="card-text">Department : Information Technology</p>
+						<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+						<p class="card-text">Contribution : Data Processing </p>
+						<a href="https://www.linkedin.com/in/sakshiasati/" target="_blank" class="btn btn-dark">LinkedIn</a>
+					</div>
+
+
+
+				</div>
+
+			</div> -->
+			<div class="col-sm">
+				<div data-aos="flip-down" class="card bg-warning text-white" style="width: 18rem;  background-image: linear-gradient(315deg, #34b7a8 0%, #e9e759 100%);">
+
+					<div class="card-body">
+						<h5 class="card-title">Prof. Ashish Soni
+						</h5>
+						<p class="card-text">Department : Computer science</p>
+						<p class="card-text">College : G.H.Raisoni College of Engineering</p>
+						<p class="card-text">Contribution : Project Guide</p>
+						<a href="https://www.linkedin.com/in/ashish-soni-368023236/" target="_blank" class="btn btn-dark">LinkedIn</a>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+
+
+
+	</div>
+	<br>
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+<br>
+<br>
+	<div class="content">
+
+		<p style="text-align: center;">Group B09 : Computer Science, G.H.Raisoni College of Engineering @Diabetes Prediction 2022</p>
+
+	</div>
+
+</body>
+
+</html>
